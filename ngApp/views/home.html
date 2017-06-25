@@ -1,0 +1,7 @@
+<h2>Home</h2>
+
+<a href="/add">Add Rapper</a>
+
+<ul>
+  <li ng-repeat="r in vm.rappers">{{r.name}} | {{r.city}} <a href="/edit/{{r._id}}">Edit</a> <a ng-click="vm.deleteRapper(r._id)">Delete</a></li>
+</ul>
